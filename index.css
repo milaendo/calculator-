@@ -1,0 +1,28 @@
+.wrapper {
+	width: 450px;
+	margin: auto;
+	
+}
+
+ button{
+	font-size: 50px;
+	display: flex;
+	width: 100px;
+	height: 100px;
+	background-color: rgb(97,179,79);
+
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.function {
+	background-color: rgb(125,187,114);
+}
+#display {
+	height:100px;
+	width: 300px;
+	background-color: rgb(97,179,79);
+}
