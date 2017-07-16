@@ -10,18 +10,35 @@ buttons.forEach(function(action){
 			let equation = screen.innerHTML
 			//value of button add to the the inner html of display 
 			//if C reset inerhtml in display the rest inner html add to previous in display
-			
+
 		if (btnVal === 'C') {
 			screen.innerHTML = ''
 		}
-		else if (btnVal === '=') {
-			let input = equation
+		else if (btnVal === '='){
+			return domath
 		}
 		//display the value of inner html onto the display
 		else {
 			screen.innerHTML += btnVal
 		}
-		
+
+		function domath () {
+			let num1 = Number()
+			let num2 = Number()
+			if (btnVal === '/') {
+			return num1 / num2
+			}
+			if (btnVal === '*') {
+				return num1 * num2
+			}
+			if (btnVal === '+') {
+				return num1 + num2
+			}
+			if (btnVal === '-') {
+				return num1 - num2
+			}
+		}
+
 	});
 })
 
